@@ -1,6 +1,6 @@
 #EC 1 Average Grade
 
-grade_1 = input("what is your grade in your 1st class: ")
+grade_1 = int(input "what is your grade in your 1st class: ")
 grade_2 = input("what is your grade in your 2nd class: ")
 grade_3 = input("what is your grade in your 3rd class: ")
 grade_4 = input("what is your grade in your 4th class: ")

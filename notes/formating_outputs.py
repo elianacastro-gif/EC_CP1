@@ -1,6 +1,6 @@
 #EC Formating outputs notes
 
-#how do i wrire the format notes
+#how do i write the format notes
 name = "jake"
 age = 1200
 money = 10000.1

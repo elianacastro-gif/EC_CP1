@@ -1,8 +1,10 @@
 #EC 1st basic calculator
 
-number_1 = input(9)
-number_2 = input(7)
+number_1 = int(input("what is number 1: "))
+number_2 = int(input("what is number 2: "))
 
-print(9+7) 
-print(9-7) 
-print(9*7) 
+
+
+print(number_1+number_2) 
+print(number_1-number_2) 
+print(number_1*number_2) 

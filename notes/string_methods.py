@@ -31,3 +31,4 @@ length = len("lazy")
 print(sentence[start:start+length])
 print(sentence.replace(word, "swims"))
 print(sentence)
+print

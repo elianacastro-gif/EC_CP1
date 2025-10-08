@@ -1,0 +1,4 @@
+#Ec 1st tic tac to pseudocode
+
+x = print(1-9 spots)
+o = print(empty spot 1-9)

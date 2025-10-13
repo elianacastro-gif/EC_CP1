@@ -1,4 +1,13 @@
 #Ec 1st tic tac to pseudocode
 
-x = print(1-9 spots)
-o = print(empty spot 1-9)
+x = print()
+o = print()
+board =""1|2|3
+        4|5|6
+        7|8|9""
+        
+FOR count (1-9)
+print ("where do you want to place your x: )    
+print ("you placed on number(input count on board)")
+NEXT count
+

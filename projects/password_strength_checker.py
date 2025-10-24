@@ -1,12 +1,14 @@
 #EC 1st password strength checker 
 
+import random 
+random.randint
 #find password
 print ("what is your password: ")
 
 #does the password have...
 list = ["length 8 characters", "one uppercase", "one lowercase","one number", "a special character (@1#$%^&*)"]
 #check password
-print("your password is missing"(list[1-5]))
+print("your password is missing"(list))
 #if your password it's not long enough etc (deemed weak) trying again/chacking password again
 no = ("exiting page")
 yes = ("checking")

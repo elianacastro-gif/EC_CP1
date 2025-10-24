@@ -9,7 +9,7 @@ print("this will check how strong your password is")
 score = 0
 #check varible and add the values
 len = "no"
-upper = "no
+upper = "no"
 lower = "no"
 digit = "no"
 special = "no"
@@ -18,16 +18,16 @@ special = "no"
 password = ("what is your password: ")
 #check length
 length = len(password)
- if length >= 8:
+if length >= 8:
     score += 1
-     len ="yes"
+    len ="yes"
 
 #check uppercase
 #check if true if true +1 for score
 for character in password:
     if character.isupper():
         upper = "yes"
-if up == "yes":
+if upper == "yes":
     score += 1
 
 #check lowercase
@@ -48,7 +48,7 @@ if digit == "yes" :
 #check for special signs
 #check if true and add 1 to score if true
 for characters in password:
-    if chracter.isspecial():
+    if characters.isspecial():
         special = "yes"
 if special == "yes":
     score += 1
@@ -67,7 +67,7 @@ else:
     ("your password is weak")
 
 #end code ask if they want to check again
-start_2 = int(input("do you want to check again: )
+start_2 = int(input("do you want to check again: "))
 if start_2 == 2:
-    start = false
+    start = False
     print("goodbye")

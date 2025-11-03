@@ -1,5 +1,2 @@
-t1 = turtle.Turtle()
-t2 = turtle.Turtle()
-t3 = turtle.Turtle()
-t4 = turtle.Turtle()
-t5 = turtle.Turtle()
+
+    if t5.xcor() >= 200:

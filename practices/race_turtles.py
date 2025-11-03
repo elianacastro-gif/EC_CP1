@@ -42,29 +42,33 @@ t5.color("blue")
 t5.shape("turtle")
 t5.teleport(-400,-300)
 
-speed = random.randint(2,5)
 #create loop of where the turtles where go
-for num in range(speed):
+while True:
+    speed = random.randint(2,5)
     t1.forward(speed)
     if t1.xcor() >= 200:
         print("purple wins ")
+        break
     t2.forward(speed)
     if t2.xcor() >= 200:
         print("green wins ")
-    t3.forward(random.randint(2,5))
+        break
+    t3.forward(speed)
     if t3.xcor() >= 200:
         print("pink wins ")
-    t4.forward(random.randint(2,5))
+        break
+    t4.forward(speed)
     if t4.xcor() >= 200:
         print("yellow wins ")
-    t5.forward(random.randint(2,5))
+        break
+    t5.forward(speed)
     if t5.xcor() >= 200:
         print("blue wins ")
-    
+        break
 
 
 
-    turtle.done()
+turtle.done()
 
 #determine the winner
 

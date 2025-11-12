@@ -4,7 +4,8 @@
 #add amount of money to buy
 
 menu: [
-    {"Horchata": }
+    {"Horchata":6.47, "(any) soda":4.16, "Agua De Jamaica":4.20} 
+    {"Carne Asada tacos":10.39, "pork tacos":9.10, ""}
 
 
 ]

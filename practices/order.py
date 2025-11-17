@@ -9,3 +9,5 @@ menu = [
     {"rice":1.10, "extra meat":1.50, "beans":1.10, "cilantro":0.50}
 ]
 print("welcome to 'Mexican on the Road', my taco truck!")
+print ("what would you like to get?")
+

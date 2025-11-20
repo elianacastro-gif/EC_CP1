@@ -13,12 +13,13 @@ print("welcome to 'Mexican on the Road', my taco truck!")
 #ask what the customer wants
 print ("what would you like to get?")
 
-order = []
+#get customers order
 
-order(menu[3,5,6,10,12])
-
-
+order_input  =input("my order is: ")
 
 
+print(menu(1-12), "your total is: ")
 
-print ("your oder will be (money) dollars!")
+
+
+

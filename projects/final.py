@@ -1,33 +1,63 @@
 #EC 1st Final
 
 #add stats of each character 
+#your stats
+player_hp = 1000
+player_damage = 10-50
+
 #character one BC
 #health, damage/attack, 
+BC_hp = 1000
+BC_damage = 10-80
 
 #Character two LK
+#health, damage/attack, 
+LK_hp = 1000
+LK_damage = 10-60
 
 #character three CB
+#health, damage/attack, 
+CB_hp = 1000
+CB_damage = 10-60
 
 #character four HJ
+#health, damage/attack, 
+HJ_hp = 1000
+HJ_damage = 10-60
 
 #character five JS
+#health, damage/attack, 
+JS_hp = 1000
+JS_damage = 10-60
 
 #character six LX
+#health, damage/attack, 
+LX_hp = 1000
+LX_damage = ()
 
 #character seven SM
+#health, damage/attack, 
+SM_hp = 1000
+SM_damage = ()
 
 #character eight IN
+#health, damage/attack, 
+IN_hp = 1000
+IN_damage = 10-60
 
 #final boss JYP 
-
+#health, damage/attack, 
+JYP_hp = 5000
+JYP_damage = 200-250
 
 
 #name all the rooms and turn them into varibles
 #name all the weapons and what happens/whose in the room
 #start area (inside front company building)
+print ("you are in the JYPE building. Tgere are 8 rooms you can go in. room 1, room 2, room 3, room 4, room 5, room 6, room 7, room 8")
 #choose which of 8 rooms to go to describe how to get there and what surroundings are like
 #make a path and ask which on they will take 
-
+print("you walk down a long hallway. where would you like to go?:")
 
 #ask what room they want to go into 
 #make it so which ever room they choose it will go to that rooms design and story
@@ -36,6 +66,7 @@
 
 #named variable of room (1/rec studio)
 #what room looks is like in a print statement
+print("you have entered the recording studio. There is only one light in the room above the table. oh! BC is here!")
 #items in the room and how you get them what the do (lightstick that gives health)
 #whose in the room (BC) and how do you fight them? write code to fight
 #import random to generate numbers for the fight
@@ -120,3 +151,6 @@
 
 #after the game is done. Ask if they want to play again
 #if yes then bring them back to the start
+print("The End", "would you like to play again :")
+
+    

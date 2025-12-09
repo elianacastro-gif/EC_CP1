@@ -54,19 +54,23 @@ JYP_damage = 200-250
 #name all the rooms and turn them into varibles
 #name all the weapons and what happens/whose in the room
 #start area (inside front company building)
-print ("you are in the JYPE building. Tgere are 8 rooms you can go in. room 1, room 2, room 3, room 4, room 5, room 6, room 7, room 8")
+print ("you are in the JYPE building. There are 8 rooms you can go in. room 1, room 2, room 3, room 4, room 5, room 6, room 7, room 8")
 #choose which of 8 rooms to go to describe how to get there and what surroundings are like
 #make a path and ask which on they will take 
-print("you walk down a long hallway. where would you like to go?:")
+print("you walk down a long hallway. where would you like to go: ")
 
 #ask what room they want to go into 
 #make it so which ever room they choose it will go to that rooms design and story
+room = ()
 
 
 
 #named variable of room (1/rec studio)
+Room_1 = ()
 #what room looks is like in a print statement
-print("you have entered the recording studio. There is only one light in the room above the table. oh! BC is here!")
+if room == Room_1:
+    print("you have entered the recording studio. There is only one light in the room above the table. oh! BC is here!")
+
 #items in the room and how you get them what the do (lightstick that gives health)
 #whose in the room (BC) and how do you fight them? write code to fight
 #import random to generate numbers for the fight
@@ -75,7 +79,10 @@ print("you have entered the recording studio. There is only one light in the roo
 #describe paths and rooms they can enter
 
 #named varible of room (2/dance pract. room)
+Room_2 =()
 #what room looks like and how it works. whose in the room (LK)
+if room == Room_2:
+    print("you have entered the dance practice room. The room is big and has a long lenth mirror on one of the walls. You look around and...oh! LK is here!")
 #set up fighting code
 #figure out how to do the dance fight
 #let them leave the room
@@ -83,8 +90,11 @@ print("you have entered the recording studio. There is only one light in the roo
 #describe paths and rooms they can enter
 
 #named varibale of room (3/)
+Room_3 =()
 #describe room in a print statement and what youll do 
 #add whose in the room (CB)
+if room == Room_3:
+    print("you have entered CB's dorm room. You look around and see CB on the couch. He looks ready for that rap battle.")
 #set up fighting code and how to play/win the game
 #show your stats for rapping and his stats to start the battle
 #add a random number within your range and roll to see who wins
@@ -95,8 +105,11 @@ print("you have entered the recording studio. There is only one light in the roo
 #describe paths and rooms they can enter
 
 #named value for room(4/dance prat. room 2nd)
+Room_4 =()
 #describe the room and what you will have to do/movements
 #add who is in the room (HJ) and how you will fight them
+if room == Room_4:
+    print("You have entered the 2nd dance practice room. The room is smaller but it still has that long length mirror on the wall.' Oop...HJ there you are!' ")
 #set up fighting code
 #show stats of each of the characters
 #once they win print they have won and give them their "prize"
@@ -106,8 +119,11 @@ print("you have entered the recording studio. There is only one light in the roo
 #describe paths and rooms they can enter
 
 #named variable of room (5/)
+Room_5 =()
 #describe room and movements  also who is in the room (JS)
-#who will you g=fight and how to win
+if room == Room_5:
+    print("You have entered the Cafeteria. The room is full of staff eating food. You keep walking and find JS who is eating. 'Now is not the time for eating JS!' ")
+#who will you fight and how to win
 #fighting code 
 #if won their stats go up (one of three)
 #if lost let them retry
@@ -116,8 +132,11 @@ print("you have entered the recording studio. There is only one light in the roo
 #describe path and rooms they can enter
 
 #named variable room (6/dorm room Kit.)
+Room_6 =()
 #add the description of the room
 #whose in the room (LX) and how to defeat them
+if room == Room_6:
+    print("You have entered LX's dorm room. You can smell a scent of food. You walk and find LX in the kitchen. 'LX! Why are you cooking?!' ")
 #any items they can get if any (frying pan used as a weapon)
 #fighting code and if they win or lose
 #let them leave room
@@ -125,7 +144,10 @@ print("you have entered the recording studio. There is only one light in the roo
 #describe path and rooms they can enter
 
 #named variable room (7/vocal room)
+Room_7 =()
 #room description
+if room == Room_7:
+    print("You have entered the vocal room. 'hmm I wonder if SM is here...'")
 #add any items if (microphone dropped after you beat him)
 #whose in the room (SM) and how to defeat them
 #fighting code  if they win/lose
@@ -134,14 +156,18 @@ print("you have entered the recording studio. There is only one light in the roo
 #descriibe which rooms they can choose (out of 8)
 
 #room (8/)
+Room_8 = ()
 #add description
 #who is in the room (IN)and how to beat them in your fight
+if room == Room_8:
+    print("You have entered the ___. You walk and see IN.")
 #if they win or lose add the print statement for it and add ore to their stats(one of 3)
 #let them leave room
 
 #once you defeat evceryone you will get a story that will lead you to the concert venue 
 
 #area 9 the venue
+area_9 = ()
 #add who the person is you are fighting (JYP) and how to beat him.
 #you will use all the stats youve earned. His stats will show up as you battle after each attack
 #make battle code (damage and health)

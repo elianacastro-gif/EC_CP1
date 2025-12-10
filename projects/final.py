@@ -33,12 +33,12 @@ JS_damage = 10-60
 #character six LX
 #health, damage/attack, 
 LX_hp = 1000
-LX_damage = ()
+LX_damage = 10-40
 
 #character seven SM
 #health, damage/attack, 
 SM_hp = 1000
-SM_damage = ()
+SM_damage = 10-60
 
 #character eight IN
 #health, damage/attack, 
@@ -52,6 +52,14 @@ JYP_damage = 200-250
 
 
 #name all the rooms and turn them into varibles
+Room_1 = ()
+Room_2 = ()
+Room_3 = ()
+Room_4 = ()
+Room_5 = ()
+Room_6 = ()
+Room_7 = ()
+Room_8 = ()
 #name all the weapons and what happens/whose in the room
 #start area (inside front company building)
 print ("you are in the JYPE building. There are 8 rooms you can go in. room 1, room 2, room 3, room 4, room 5, room 6, room 7, room 8")
@@ -70,11 +78,20 @@ Room_1 = ()
 #what room looks is like in a print statement
 if room == Room_1:
     print("you have entered the recording studio. There is only one light in the room above the table. oh! BC is here!")
+else:
+    print("you have entered" (room(1-8)))
 
 #items in the room and how you get them what the do (lightstick that gives health)
 #whose in the room (BC) and how do you fight them? write code to fight
 #import random to generate numbers for the fight
+import random
+
+hit_roll = random.randint(10-80) + BC_damage
+if hit_roll == (20-50):
+    print("you got hit.")
+    player_hp-hit_roll
 #let them leave the room
+
 
 #describe paths and rooms they can enter
 
@@ -147,7 +164,7 @@ if room == Room_6:
 Room_7 =()
 #room description
 if room == Room_7:
-    print("You have entered the vocal room. 'hmm I wonder if SM is here...'")
+    print("You have entered the vocal room. 'hmm I wonder if SM is in here...'")
 #add any items if (microphone dropped after you beat him)
 #whose in the room (SM) and how to defeat them
 #fighting code  if they win/lose
@@ -169,6 +186,8 @@ if room == Room_8:
 #area 9 the venue
 area_9 = ()
 #add who the person is you are fighting (JYP) and how to beat him.
+if room == area_9:
+    print("You have arrived at the stadium with all the members! 'That was hard but i did it...oh who is that...?' ")
 #you will use all the stats youve earned. His stats will show up as you battle after each attack
 #make battle code (damage and health)
 #ask what attack they want (any of 4) ask after every attack

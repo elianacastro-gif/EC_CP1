@@ -9,47 +9,47 @@ player_damage = 10-50
 #health, damage/attack, 
 BC_hp = 1000
 BC_damage = 10-80
-
+BC_defence = 30
 #Character two LK
 #health, damage/attack, 
 LK_hp = 1000
 LK_damage = 10-60
-
+LK_defence = 30
 #character three CB
 #health, damage/attack, 
 CB_hp = 1000
 CB_damage = 10-60
-
+CB_defence = 30
 #character four HJ
 #health, damage/attack, 
 HJ_hp = 1000
 HJ_damage = 10-60
-
+HJ_defence = 30
 #character five JS
 #health, damage/attack, 
 JS_hp = 1000
 JS_damage = 10-60
-
+JS_defence = 30
 #character six LX
 #health, damage/attack, 
 LX_hp = 1000
 LX_damage = 10-40
-
+LX_defence = 30
 #character seven SM
 #health, damage/attack, 
 SM_hp = 1000
 SM_damage = 10-60
-
+SM_defence = 30
 #character eight IN
 #health, damage/attack, 
 IN_hp = 1000
 IN_damage = 10-60
-
+IN_defence = 30
 #final boss JYP 
 #health, damage/attack, 
 JYP_hp = 5000
 JYP_damage = 200-250
-
+JYP_defence = 30
 
 #name all the rooms and turn them into varibles
 Room_1 = ()
@@ -62,24 +62,24 @@ Room_7 = ()
 Room_8 = ()
 #name all the weapons and what happens/whose in the room
 #start area (inside front company building)
-print ("you are in the JYPE building. There are 8 rooms you can go in. room 1, room 2, room 3, room 4, room 5, room 6, room 7, room 8")
+print ("you are in the JYPE building. There are 8 rooms you can go in.", [Room_1, Room_2, Room_3, Room_4, Room_5, Room_6, Room_7, Room_8])
 #choose which of 8 rooms to go to describe how to get there and what surroundings are like
 #make a path and ask which on they will take 
 print("you walk down a long hallway. where would you like to go: ")
 
 #ask what room they want to go into 
 #make it so which ever room they choose it will go to that rooms design and story
-room = ()
+room = (Room_1, Room_2, Room_3, Room_4,Room_5, Room_6, Room_7, Room_8)
 
 
 
 #named variable of room (1/rec studio)
-Room_1 = ()
+
 #what room looks is like in a print statement
 if room == Room_1:
     print("you have entered the recording studio. There is only one light in the room above the table. oh! BC is here!")
 else:
-    print("you have entered" (room(1-8)))
+    print(Room_2-Room_8)
 
 #items in the room and how you get them what the do (lightstick that gives health)
 #whose in the room (BC) and how do you fight them? write code to fight
@@ -87,10 +87,32 @@ else:
 import random
 
 hit_roll = random.randint(10-80) + BC_damage
-if hit_roll == (20-50):
-    print("you got hit.")
-    player_hp-hit_roll
+if hit_roll == 20:
+    print("you got a crit! that means you get to roll for damage twice!")
+    damage_roll = random.randint(10,80) + random.randint(10,80) + player_damage
+    print(f"you did {damage_roll-BC_defence} damage.")
+    BC_hp -= (damage_roll-BC_defence)
+elif  hit_roll == 1:
+    print("you roll a critical failure! now the monster gets to attack you!")
+    damage_roll = random.randint(10,80) + BC_damage
+    player_hp -= (damage_roll)
+    print(f"BC rolled {damage_roll}, you hp is now {player_hp} ")
+elif hit_roll + player_damage >= 12:
+    print("you hit! roll for damage!")
+    damage_roll = random.randint(10,80) + player_damage
+    if damage_roll > BC_defence:
+        print(f"you did {damage_roll-BC_defence} damage.")
+        BC_hp -= (damage_roll-BC_defence)
+    else:
+        print("you did no damage.")
+else:
+    print("you missed.")
+
+print("your turn is over")
+
+
 #let them leave the room
+
 
 
 #describe paths and rooms they can enter
@@ -100,6 +122,8 @@ Room_2 =()
 #what room looks like and how it works. whose in the room (LK)
 if room == Room_2:
     print("you have entered the dance practice room. The room is big and has a long lenth mirror on one of the walls. You look around and...oh! LK is here!")
+else: 
+    print (Room_1-Room_8)
 #set up fighting code
 #figure out how to do the dance fight
 #let them leave the room
